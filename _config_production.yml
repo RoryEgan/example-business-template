@@ -1,0 +1,5 @@
+url: ""
+//baseurl: "http://carawebstest.com/cw-master"
+production: true
+#paginate: 3
+#paginate_path: /cafe-showcase/_site/blog/page:num/

@@ -1,0 +1,145 @@
+.ghost {
+
+  h2 {
+    color: $button-colour;
+  }
+
+  .intro-phone {
+    a {
+      background: transparent;
+    }
+  }
+
+  .btn,
+  .intro-phone span.nonclick-phone {
+    background: transparent;
+    border: solid 1px $brand-primary;
+    color: $brand-primary
+  }
+
+}
+
+.btn-default {
+  color: $button-colour;
+}
+
+.intro-phone {
+
+  //margin: $vertical-margin auto;
+
+  span.nonclick-phone {
+    background: $phone-button-bg;
+    border: none;
+    color: $button-colour;
+    &:hover {
+      background: darken( $phone-button-bg, 20% );
+      color: $button-colour;
+    }
+  }
+  .phone-text {
+    font-size: 18px;
+  }
+}
+
+.body-phone {
+
+  //margin: $vertical-margin auto;
+  padding-top: 10px;
+  //margin-top: 15px;
+  span.nonclick-phone {
+    background: $brand-primary;
+    border: none;
+    color: $button-colour;
+    &:hover {
+      background: darken( $brand-primary, 20% );
+      color: $button-colour;
+    }
+  }
+  .phone-text {
+    font-size: 24px;
+  }
+}
+
+.btn-default {
+  background: $phone-button-bg;
+  border: none;
+}
+
+.header-phone .btn-default {
+
+  //margin: $vertical-margin auto;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  background: $brand-primary;
+  border: none;
+  color: $button-colour;
+
+  &:hover {
+    background: darken( $brand-primary, 10% );
+    color: $button-colour;
+  }
+
+  span.nonclick-phone {
+  }
+  .phone-text {
+    font-size: 18px;
+  }
+}
+
+.ghost.btn-default {
+  background: transparent;
+  border: solid 1px //$dark-grey;
+}
+
+.click-phone {
+  @media(min-width: $screen-xs-max) {
+    display: none;
+  }
+}
+
+
+.phone-text {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  //letter-spacing: 2px;
+}
+
+.active-phone {
+  display: none;
+  position: absolute;
+  right: 25px;
+  top: -50px;
+  font-size: 24px;
+  -webkit-transform:rotate(-90deg);
+  -moz-transform:rotate(-90deg);
+  -o-transform:rotate(-90deg);
+  transform:rotate(-90deg);
+  ms-filter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  color: $button-colour;
+}
+
+.active-phone:hover {
+  color: $button-colour;
+}
+
+.ghost, .footer {
+
+  h2 {
+    color: $button-colour;
+  }
+
+  .intro-phone {
+    a {
+      background: transparent;
+    }
+  }
+
+  .btn,
+  .intro-phone span.nonclick-phone {
+    background: transparent;
+    border: solid 1px #000;
+  }
+
+}

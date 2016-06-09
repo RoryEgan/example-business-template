@@ -1,0 +1,30 @@
+<div class="row">
+  {% for item in site.data.social %}
+  <div class="col-md-12 hidden-xs text-right">
+    <ul class="icon-list">
+      {% if item.twitter-handle != nil %}
+      <li><a class="social-icons" href="{{ item.twitter-handle }}" title="Follow us on Twitter"><i class="fa fa-fw fa-twitter"></i>Follow Us on Twitter&nbsp;</a></li>
+      {% endif %}
+      {% if item.company-facebook != nil %}
+      <li><a class="social-icons" href="{{ item.company-facebook }}" title="Find us on Facebook"><i class="fa fa-fw fa-facebook"></i>Find Us on Facebook&nbsp;</a></li>
+      {% endif %}
+      {% if item.pinterest-details != nil %}
+      <li><a class="social-icons" href="{{ item.pinterest-details }}" title="Find us on Pinterest"><i class="fa fa-fw fa-pinterest"></i>Find Us on Pinterest&nbsp;</a></li>
+      {% endif %}
+    </ul>
+  </div>
+  <div class="col-md-12 hidden-sm hidden-md hidden-lg text-left">
+    <div class="btn-group-vertical">
+      {% if item.twitter-handle != nil %}
+      <a class="social-icons btn btn-block" href="{{ item.twitter-handle }}" title="Follow us on Twitter">Follow Us on Twitter&nbsp;<i class="fa fa-fw fa-twitter"></i></a>
+      {% endif %}
+      {% if item.company-facebook != nil %}
+      <a class="social-icons btn btn-block" href="{{ item.company-facebook }}" title="Find us on Facebook">Find Us on Facebook&nbsp;<i class="fa fa-fw fa-facebook"></i></a>
+      {% endif %}
+      {% if item.pinterest-details != nil %}
+      <a class="social-icons btn btn-block" href="{{ item.pinterest }}" title="Find us on Pinterest">Find Us on Pinterest&nbsp;<i class="fa fa-fw fa-pinterest"></i></a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

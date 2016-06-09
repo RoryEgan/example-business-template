@@ -1,0 +1,16 @@
+<div class="body-phone">
+  <div class="text-center">
+    {% for item in site.data.contact %}
+    <h3>{{ item.call-to-action }}</h3>
+    <span class="hidden-xs">
+      <span class="nonclick-phone btn btn-default btn-lg hidden-xs"><h4><i class="fa fa-phone fa-fw fa-rotate-270"></i>&nbsp;Call {{ item.contact-mobile-number }}</h4></span>
+    </span>
+    <span class="hidden-sm hidden-md hidden-lg">
+      <a href="tel:{{item.contact-mobile-number}}" class="click-phone btn btn-default btn-lg">
+        <span class="phone-text">Click to Call</span>
+        <i class="fa fa-phone fa-fw fa-rotate-270"></i>
+      </a>
+    </span>
+    {% endfor %}
+  </div>
+</div>

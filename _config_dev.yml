@@ -1,0 +1,7 @@
+url: ""
+#baseurl: /jekyll-template/_site
+baseurl: "/cw-master/_site"
+paginate: 10
+production: false
+#category_dir: "/blog"
+#paginate_path: /cafe-showcase/_site/blog/page:num/

@@ -1,0 +1,66 @@
+.page-content {
+  padding: 150px 0 0 0;
+  font-size: $font-size-base;
+}
+
+.page-content-frontpage {
+  padding: 75px 0 0 0;
+  font-size: $font-size-base;
+}
+
+.section {
+  margin: 30px 0 30px 0;
+}
+
+a#go-top {
+  background: $phone-button-bg;
+  border: solid 1px $button-colour;
+  color: $button-colour;
+
+}
+
+#go-top {
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  display: none;
+
+  .go-top-text {
+
+    font-size: 18px;
+
+  }
+
+}
+
+.page-scroll {
+
+  .fa-chevron-down {
+
+    font-size: 40px;
+    color: $button-colour;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+  }
+}
+
+.btn-circle {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 60px;
+  border: solid 1px $button-colour;
+  margin-top: 40px;
+}
+
+.margin-top {
+  margin-top: 50px;
+}

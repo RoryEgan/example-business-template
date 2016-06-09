@@ -1,0 +1,24 @@
+{% for node in site.data.nav %}
+  {% capture nodecheck %}{% if node.url != "/" %}{{ node.url }}/{% else %}/{% endif %}{% endcapture %}
+  {% if node.title == "Services" %}
+    <li class="dropdown">
+      <a href="{{ site.baseurl }}{{ node.url }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">{{ node.title }}&nbsp;<i class="fa fa-angle-down"></i></a>
+      <ul class="dropdown-menu">
+        {% for service in node.subcategories %}
+        {% capture servicepage %}{{ service.subhref }}/{% endcapture %}
+          {% if page.url == servicepage %}
+            <li class="active"><a href="{{ site.baseurl }}{{ service.subhref }}" class="active">{{ service.subtitle }}</a></li>
+          {% else %}
+            <li><a href="{{ site.baseurl }}{{ service.subhref }}">{{ service.subtitle }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </li>
+  {% else %}
+    {% if page.url == nodecheck or page.id and node.title == "Blog" %}
+      <li class="active"><a href="{{ site.baseurl }}{{node.url}}" class="active">{{node.title}}</a></li>
+    {% else %}
+      <li><a href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a></li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
