@@ -1,8 +1,7 @@
 node_modules
 bower_components
-**/big-images/*.jpg
-**/medium-images/*.jpg
+assets/images/*/*
 _site
 Gruntfile.js
 .sass-cache
-_source-images/*
+_source-images/*/*
