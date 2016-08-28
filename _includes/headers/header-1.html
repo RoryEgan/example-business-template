@@ -1,37 +1,57 @@
-<nav class="navbar navbar-fixed-top">
-  <div class="header-nav">
-      <div class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-          <div class="col-md-2 hidden-xs">
-            <a href="{{site.baseurl}}"><h2>{{site.title}}</h2></a>
-          </div>
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle ghost" data-toggle="collapse" data-target="#top-nav">
-              <span class="pull-left hamburger">
-                <span class="sr-only">Toggle navigation</span>
-                <i class="fa fa-bars fa-fw"></i>
-              </span>S
-              <span class="pull-right">
-                &nbsp;MENU
-              </span>
-            </button>
-          </div>
-          <div class="col-md-4 col-md-offset-1">
-            <nav id="top-nav" class="collapse navbar-collapse top-nav" role="navigation">
-              <!-- Include the main navigation ul element -->
-              <ul class="nav navbar-nav">
-                <div class="collapse navbar-collapse dropdown-col" id="navbar-ex-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                    {% include headers/nav.html %}
-                  </ul>
-                </div>
-              </ul>
-            </nav>
-          </div>
-          <div class="col-md-1 col-md-offset-3">
-            {% include buttons/header-phone.html %}
-          </div>
+<header class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-5">
+        <div class="company-logo">
+          <img src="{{site.baseurl}}/assets/images/car.svg" alt="" width="75" height="75" class="img-responsive" />
+        </div>
+        <div class="company-title">
+          <a href="{{site.baseurl}}"><h2>{{ site.data.company-details[0].company-name }}</h2></a>
         </div>
       </div>
+      <div class="col-sm-5 col-sm-offset-2 hidden-xs">
+        <div class="pull-right header-buttons">
+          {% include buttons/header-buttons.html %}
+        </div>
+      </div>
+    </div>
   </div>
-</nav>
+</header>
+<div id="sticky-nav-wrap">
+  <header class="navbar navbar-default navbar-inverse navbar-static-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="button-label">Menu</span>
+        <div class = "button-burger">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </div>
+      </button>
+      </div>
+      <nav id="navbar-ex-collapse" class="collapse navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav">
+          {% include headers/nav.html %}
+        </ul>
+        <ul class="nav navbar-nav navbar-right contact-nav">
+          <li>
+            <span class="hidden-xs">
+              <a href="mailto: {{ site.data.contact[0].email }}">
+                <i class="fa fa-fw fa-envelope"></i>Email Us&nbsp;
+              </a>
+            </span>
+          </li>
+          <li>
+            <span class="hidden-xs">
+              <span>
+                <i class="fa fa-phone fa-fw fa-rotate-270"></i>{{ site.data.contact[0].landline-number }}
+              </span>
+            </span>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
