@@ -1,7 +1,0 @@
-url: "http://carawebstest.com/cw-master"
-#baseurl: "http://carawebstest.com/cw-master"
-baseurl: "/cw-master"
-paginate: 10
-production: false
-#paginate_path: /cw-master/_site/blog/page:num/
-category_dir: ""

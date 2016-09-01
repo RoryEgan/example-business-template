@@ -1,7 +1,0 @@
-node_modules
-bower_components
-assets/images/*/*
-_site
-Gruntfile.js
-.sass-cache
-_source-images/*/*
