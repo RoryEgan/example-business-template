@@ -2,27 +2,27 @@
   {% for item in site.data.contact %}
   <div class="hidden-xs">
     <ul class="icon-list">
-      {% if item.contact-mobile-number != nil %}
-      <li><a class="social-icons" href="{{ item.contact-mobile-number }}" title="Call our mobile"><i class="fa fa-fw fa-mobile"></i>&nbsp;{{item.contact-mobile-number}}</a></li>
+      {% if item.mobile-number != nil %}
+      <li><a class="social-icons" href="{{ item.contact-mobile-number }}" title="Call our mobile"><i class="fa fa-fw fa-mobile"></i>&nbsp;{{item.contact-mobile-number}}&nbsp;Call our mobile</a></li>
       {% endif %}
-      {% if item.contact-landline-number != nil %}
-      <li><a class="social-icons" href="{{ item.contact-landline-number }}" title="Call our landline"><i class="fa fa-fw fa-phone"></i>&nbsp;{{item.contact-landline-number}}</a></li>
+      {% if item.landline-number != nil %}
+      <li><a class="social-icons" href="{{ item.contact-landline-number }}" title="Call our landline"><i class="fa fa-fw fa-phone"></i>&nbsp;{{item.contact-landline-number}}&nbsp;Call our landline</a></li>
       {% endif %}
-      {% if item.main-email-address-1 != nil %}
-      <li><a class="social-icons" href="{{ item.main-email-address-1 }}" title="Email us"><i class="fa fa-fw fa-envelope"></i>&nbsp;{{ item.main-email-address-1 }}</a></li>
+      {% if item.email != nil %}
+      <li><a class="social-icons" href="{{ item.main-email-address-1 }}" title="Email us"><i class="fa fa-fw fa-envelope"></i>&nbsp;{{ item.main-email-address-1 }}&nbsp;Email Multipage Jekyll</a></li>
       {% endif %}
     </ul>
   </div>
   <div class="hidden-sm hidden-md hidden-lg text-left">
     <div class="btn-group-vertical">
-      {% if item.contact-mobile-number != nil %}
+      {% if item.mobile-number != nil %}
       <a class="social-icons btn btn-block" href="{{ item.contact-mobile-number }}" title="Call our mobile"><i class="fa fa-fw fa-phone"></i>&nbsp;Call our mobile</a>
       {% endif %}
-      {% if item.contact-landline-number != nil %}
+      {% if item.landline-number != nil %}
       <a class="social-icons btn btn-block" href="{{ item.landline-mobile-number }}" title="Call our landline"><i class="fa fa-fw fa-phone"></i>&nbsp;Call our landline</a>
       {% endif %}
-      {% if item.main-email-address-1 != nil %}
-      <a class="social-icons btn btn-block" href="{{ item.main-email-address-1 }}" title="Email us"><i class="fa fa-fw fa-envelope"></i>&nbsp;Email us</a>
+      {% if item.email != nil %}
+      <a class="social-icons btn btn-block" href="{{ item.main-email-address-1 }}" title="Email us"><i class="fa fa-fw fa-envelope"></i>&nbsp;Email Multipage Jekyll</a>
       {% endif %}
     </div>
   </div>
