@@ -1,0 +1,247 @@
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    //background: $intro-background-image no-repeat bottom center scroll;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    .intro-body {
+        display: table-cell;
+        vertical-align: middle;
+        .brand-heading {
+            font-size: 40px;
+        }
+        .intro-text {
+            font-size: 18px;
+        }
+    }
+    @media (min-width: $screen-lg) {
+        height: 100%;
+        padding: 200px 0 200px 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 70px;
+            }
+            .intro-text {
+                font-size: 24px;
+            }
+        }
+    }
+    @media (min-width: $screen-md) {
+        height: 100%;
+        padding: 150px 0 150px 0;
+        .intro-body {
+            .brand-heading {
+                font-size: 50px;
+            }
+            .intro-text {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+section {
+  position: relative;
+  padding-top: $vertical-padding;
+  padding-bottom: $vertical-padding;
+
+  /* Large screen & Bigger */
+  @media (min-width: $screen-lg) {
+
+    h2 {
+      margin-top: 0px;
+    }
+
+  }
+
+  h2.call-to-action {
+    margin: 40px 0;
+  }
+
+}
+
+.text-inverse.intro-section {
+  color: rgba(0, 0, 0, 0.76);
+
+  h2 {
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+  ul li:before {
+    color: rgba(0, 0, 0, 0.76);
+  }
+
+}
+
+.services-well {
+  background-color: $services-well-bg;
+  border-radius: 0px;
+  border: none;
+}
+
+.services-bg {
+
+  background: $services-background-image no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: desaturate($brand-primary, 10%);
+  background-position:center;
+
+}
+
+.bg-image {
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: $brand-primary;
+  background-position:center;
+  position: relative;
+
+  .opaque-layer {
+
+      background-color: $light-opaque-background;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+  }
+
+}
+
+.services {
+
+  &.light-text {
+
+    color: #fff;
+    border: none;
+
+    a {
+
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+
+    }
+
+  }
+
+  &.dark-text {
+
+    //color: #fff;
+    border: none;
+
+    a {
+
+      //color: #fff;
+      &:hover {
+        text-decoration: underline;
+        opacity: 0.7;
+      }
+
+    }
+
+  }
+
+}
+
+.testimonials-row {
+
+  margin-top: $vertical-padding;
+
+}
+
+h2.background-line {
+
+    position: relative;
+    overflow: hidden;
+
+    span {
+
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+
+            content: '';
+            display: block;
+            width: 1000px;
+            position: absolute;
+            top: 0.73em;
+            border-top: 1px solid #474747;
+
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+
+    }
+
+}
+
+.services h2.background-line {
+
+  span {
+
+    &:before, &:after {
+
+      border-top: 1px solid #fff;
+
+    }
+
+  }
+
+}
+// Media Queries
+// -----------------------------------------------------------------------------
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+  //
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+  //
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+  .intro-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+  .section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .intro .well {
+    margin-top: 90px;
+  }
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+  //
+}

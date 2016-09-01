@@ -1,0 +1,97 @@
+body {
+  color: darken(#74777A, 20%);
+}
+
+.light-text {
+  color: #fff;
+}
+
+.page-content {
+  padding: 50px 0 50px 0;
+  font-size: $font-size-base;
+}
+
+.post-content {
+  padding-top: 10px;
+}
+
+.page-content-frontpage {
+  //padding: 75px 0 0 0;
+  font-size: $font-size-base;
+}
+
+.section {
+  padding: 50px 0 50px 0;
+}
+
+.about-page-link {
+  text-decoration: underline;
+}
+
+.fa-check {
+  display: block;
+  line-height: 1.75;
+}
+
+.img-caption {
+  position: relative;
+  h5 {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background: rgba(#3d3d3d, 0.7);
+    margin-bottom: 0;
+    color: #fff;
+    width: 100%;
+    //text-align: center;
+  }
+}
+
+.bottom-space {
+  padding-bottom: 20px;
+}
+
+a#go-top {
+  background: rgba(#7e7e7e, 0.82);
+  border: solid 1px $button-colour;
+  color: #fff;
+
+}
+
+.contact-map {
+  margin-bottom: 40px;
+}
+
+#go-top {
+
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  display: none;
+
+  .go-top-text {
+
+    font-size: 18px;
+
+  }
+
+}
+
+.page-scroll {
+
+  .fa-chevron-down {
+
+    font-size: 40px;
+    color: $button-colour;
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+  }
+}
+
+.margin-top {
+  margin-top: 50px;
+}

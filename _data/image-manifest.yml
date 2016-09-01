@@ -1,0 +1,30 @@
+
+
+
+#!#!#!#!# Do not edit below this line.
+# Generated automatically using `grunt imageManifest` on Thu Sep 01 2016 12:16:22 GMT+0100 (IST)
+
+assets/images/medium-images/2015-05-05-11.49.41.jpg:
+  width: 800
+  height: 1067
+  aspect: 0.7497656982193065
+  src: assets/images/medium-images/2015-05-05-11.49.41.jpg
+  images-category: images-medium-images
+assets/images/medium-images/2016-06-22-14.39.40.jpg:
+  width: 800
+  height: 600
+  aspect: 1.3333333333333333
+  src: assets/images/medium-images/2016-06-22-14.39.40.jpg
+  images-category: images-medium-images
+assets/images/medium-images/image-1.jpg:
+  width: 800
+  height: 600
+  aspect: 1.3333333333333333
+  src: assets/images/medium-images/image-1.jpg
+  images-category: images-medium-images
+assets/images/medium-images/image-2.jpg:
+  width: 800
+  height: 600
+  aspect: 1.3333333333333333
+  src: assets/images/medium-images/image-2.jpg
+  images-category: images-medium-images

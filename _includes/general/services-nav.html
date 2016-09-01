@@ -1,0 +1,7 @@
+<ul class="list-unstyled services-nav">
+{% for post in site.services %}
+  {% if post.layout == "service-post" %}
+    <li><a href="{{ site.baseurl }}{{ post.url }}">&nbsp{{ post.title }}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>

@@ -1,0 +1,26 @@
+{
+  "name": "cw-templates",
+  "version": "1.0.0",
+  "authors": [
+    "David Egan <david@carawebs.com>"
+  ],
+  "description": "Jekyll Website",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.0.3",
+    "font-awesome": "~4.3.0",
+    "bootstrap-sass": "~3.3.5",
+    "masonry": "^4.1.0",
+    "imagesloaded": "^4.1.0"
+  }
+}

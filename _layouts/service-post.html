@@ -1,0 +1,21 @@
+---
+layout: default
+post-type: blog-post
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <header class="post-header bottom-space">
+        <h1>{{ page.title }}</h1>
+      </header>
+      <img src="{{ site.baseurl }}/{{ page.featured-image }}" alt="" class="img-responsive">
+      {% if page.image-caption != nil %}<div class="img-caption">{{ page.image-caption }}</div>{% endif %}
+      <article class="post-content">
+        {{ content }}
+      </article>
+    </div>
+    <div class="col-md-5 col-md-offset-1 sidebar">
+      {% include general/services-sidebar.html %}
+    </div>
+  </div>
+</div>

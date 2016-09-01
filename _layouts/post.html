@@ -1,0 +1,27 @@
+---
+layout: default
+post-type: blog-post
+---
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <header class="post-header bottom-space">
+        <h1>{{ page.title }}</h1>
+        <span><i class="fa fa-clock-o"></i>&nbsp;<time datetime="{{page.date|date:"%F"}}">{{ page.date|date:"%b %d, %Y" }}</time></span><br/>
+        <span class="category"><i class="fa fa-tags"></i>&nbsp;{{ page.categories | category_links }}</span><br/>
+        <span class="author"><i class="fa fa-user"></i>&nbsp;{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif%}</span>
+      </header>
+      <img src="{{ site.baseurl }}/{{ page.featured-image }}" alt="" class="img-responsive">
+      {% if page.image-caption != nil %}<div class="img-caption">{{ page.image-caption }}</div>{% endif %}
+      <article class="post-content">
+        {{ content }}
+        
+        <div class="lead">Did you find this article useful?</div>
+        {% include buttons/body-phone.html %}
+      </article>
+    </div>
+    <div class="col-md-4 col-md-offset-1 sidebar">
+      {% include general/sidebar.html %}
+    </div>
+  </div>
+</div>

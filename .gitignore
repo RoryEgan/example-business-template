@@ -1,0 +1,10 @@
+node_modules
+bower_components
+**/big-images/*.jpg
+**/medium-images/*.jpg
+_site
+Gruntfile.js
+.sass-cache
+_source-images/*
+/assets/images/medium-images/*/*
+/assets/images/big-images/*/*

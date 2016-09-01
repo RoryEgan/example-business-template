@@ -1,0 +1,323 @@
+.navbar {
+
+  /* Large screen & Bigger */
+  @media (min-width: $screen-lg) {
+  	background: $navbar-background;
+    color: $navbar-colour;
+  }
+  /* Medium screen and smaller */
+  @media (max-width: $screen-md-max) {
+  	background: $navbar-background;
+    color: $navbar-colour;
+  }
+  /* Small screen and smaller */
+  @media (max-width: $screen-sm-max) {
+  	background: $navbar-background;
+    color: #000;
+  }
+  /* Extra small screen and smaller */
+  @media (max-width: $screen-xs-max) {
+  	background: #fff;
+    color: #000;
+  }
+  /* smaller than Extra small screen */
+  @media (max-width: ($screen-xs - 1)) {
+  	//
+  }
+
+  li > .dropdown-menu {
+
+    //width: 100%;
+    position: absolute;
+    left: 0;
+    right: 100%;
+    background: $navbar-background;
+    color: $navbar-colour;
+    border: none;
+
+
+
+    li > a {
+
+      padding: 10px 15px;
+      &:hover,
+      &:focus {
+
+        color: #fff;
+        text-decoration: underline;
+        background: $navbar-background;
+
+      }
+
+    }
+
+  }
+
+  .navbar-top {
+    background-color: #8a8a8a;
+    padding-bottom: 5px;
+  }
+
+}
+
+header.banner {
+  padding: 20px 0 20px 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  /* Large screen & Bigger */
+  @media (min-width: $screen-lg) {
+  	//
+  }
+  /* Medium screen and smaller */
+  @media (max-width: $screen-md-max) {
+  	//
+  }
+  /* Small screen and smaller */
+  @media (max-width: $screen-sm-max) {
+  	//
+  }
+  /* Extra small screen and smaller */
+  @media (max-width: $screen-xs-max) {
+  	background-color: #000;
+  }
+  /* smaller than Extra small screen */
+  @media (max-width: ($screen-xs - 1)) {
+  	//
+  }
+}
+
+.company-title {
+
+  width: 80%;
+  float: left;
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  h2 {
+    /* Large screen & Bigger */
+    @media (min-width: $screen-lg) {
+    	font-size: 28px;
+    }
+    /* Medium screen and smaller */
+    @media (max-width: $screen-md-max) {
+        font-size: 24px;
+    }
+    /* Small screen and smaller */
+    @media (max-width: $screen-sm-max) {
+    	font-size: 22px;
+    }
+    /* Extra small screen and smaller */
+    @media (max-width: $screen-xs-max) {
+    	font-size: 20px;
+    }
+    /* smaller than Extra small screen */
+    @media (max-width: ($screen-xs - 1)) {
+    	//
+    }
+    padding: 0;
+    margin: 0;
+
+  }
+}
+
+.company-logo {
+  float: left;
+  width: 15%;
+
+}
+
+// Styles added when the navbar contracts
+
+.navbar-default.navbar-fixed-top {
+  background-color: #000;
+  transition: all .7s;
+}
+
+.contact-nav {
+  font-size: 14px;
+  color: #fff;
+  padding-top: 14px;
+  a {
+    color: #fff;
+  }
+}
+
+.navbar.top-nav-collapse,
+.main-home .top-nav-collapse,
+.intro-bg-image .top-nav-collapse {
+
+  background: #000;
+  opacity: 1;
+  padding: 0px;
+  height: 30px;
+  transition: 0.3s;
+
+  li > .dropdown-menu {
+
+    background: #000;
+    margin-top: 0;
+
+  }
+
+}
+
+.navbar-inverse {
+  border: none;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+
+    //border-color: blue;
+    border: none;
+
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+
+  color: #fff;
+  text-decoration: underline;
+
+  /* Large screen & Bigger */
+  @media (min-width: $screen-lg) {
+  	background-color: transparent;
+  }
+  /* Medium screen and smaller */
+  @media (max-width: $screen-md-max) {
+  	background-color: transparent;
+  }
+  /* Small screen and smaller */
+  @media (max-width: $screen-sm-max) {
+  	background-color: transparent;
+  }
+  /* Extra small screen and smaller */
+  @media (max-width: $screen-xs-max) {
+  	background-color: #000;
+  }
+  /* smaller than Extra small screen */
+  @media (max-width: ($screen-xs - 1)) {
+  	//
+  }
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #fff;
+}
+
+button.navbar-toggle {
+  background-color: #000;
+  color: #fff;
+}
+
+button.navbar-toggle-collapsed {
+  background-color: #fff;
+  color: #000;
+}
+
+.nonclick-phone.hidden-xs {
+
+  display:inline !important;
+
+}
+
+#footer .nonclick-phone.hidden-xs {
+
+  display:block !important;
+
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  @media (max-width: $screen-xs-max) {
+    background-color: #000;
+  }
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: #333;
+  color: #fff;
+}
+
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+
+  .nonclick-phone.hidden-xs,
+  #footer .nonclick-phone.hidden-xs {
+
+    display:none !important;
+
+  }
+
+  .navbar-brand {
+
+    //display: block;
+    //clear: both;
+    //float: none;
+
+  }
+
+}
+
+/* Large screen & Bigger */
+@media (min-width: $screen-lg) {
+	//
+}
+/* Medium screen and smaller */
+@media (max-width: $screen-md-max) {
+	//
+}
+/* Small screen and smaller */
+@media (max-width: $screen-sm-max) {
+	//
+}
+/* Extra small screen and smaller */
+@media (max-width: $screen-xs-max) {
+	//
+}
+/* smaller than Extra small screen */
+@media (max-width: ($screen-xs - 1)) {
+	//
+}
+
+a {
+  color: $navbar-colour;
+}
+
+.main-logo {
+  a {
+    color: $navbar-colour;
+  }
+}
+
+.nav-justified {
+  width: 100%;
+}
+
+.nav-justified > li {
+  float: none;
+  border: solid 1px #fff;
+}
+
+@media (min-width: 768px){
+  .nav-justified > li {
+    display: table-cell;
+    width: 1%;
+  }
+}
+
+.centred-header {
+  .navbar-toggle{
+    float: none;
+  }
+}
+
+.dropdown-col {
+  @media (max-width: 768px){
+    background-color: opacify( #000, 0.6);
+    margin-top: 3px;
+  }
+}

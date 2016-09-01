@@ -1,0 +1,29 @@
+---
+layout: frontpage
+map-zoom: 16
+map-type: single-centre
+map-height: 400px
+intro-bg-opaque-overlay: rgba(122, 21, 139, 0.6)
+intro-bg-image: assets/images/hero.jpg
+---
+{% capture intro-bg-style %}
+style="background:
+  {% if page.intro-bg-opaque-overlay != nil %} linear-gradient(
+      {{ page.intro-bg-opaque-overlay }},
+      {{ page.intro-bg-opaque-overlay }}
+    ),
+  {% endif %}{% if page.intro-bg-image != nil %}
+   url('{{ page.intro-bg-image }}') center center fixed; background-size: cover;
+  {% endif %}"
+{% endcapture %}
+
+{% include intro.html bg-style = intro-bg-style %}
+
+{% assign sections = site.frontpage-sections | sort: 'order' %}
+{% for section in sections %}
+  {% if section.include != null %}
+    {% include {{ section.include }} %}
+  {% else %}
+    {% include sections/default.html %}
+  {% endif %}
+{% endfor %}

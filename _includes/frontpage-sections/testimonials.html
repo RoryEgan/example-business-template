@@ -1,0 +1,29 @@
+{% include style-rules.html %}
+<section id="{% if section.unique-class != nil %}{{ section.unique-class }}{% else %}{{ section.title | slugify }}{% endif %}" class="content-section {% if 'light' == section.text-colour %} light-text{% endif %}"{{ bg-style }}>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 bottom-space">
+        <h2 class="text-center background-line">What Our Clients Say:</h2>
+        <div class="testimonials-row">
+        {% for testimonial in site.data.testimonials %}
+          <div class="testimonial">
+            <blockquote>
+              <p>{{ testimonial.quote }}</p>
+              {% if nil != testimonial.person %}
+              <footer>{{ testimonial.person }}</footer>
+              {% endif %}
+            </blockquote>
+          </div>
+          {% assign odd = forloop.index | modulo:2 %}
+          {% if odd == 0 and forloop.last == false %}
+          {% comment %}Even item & not last - close the row and start a new one {% endcomment %}
+          </div><div class="row">
+          {% elsif forloop.last %}
+          {% comment %}The last item - close the row and stop {% endcomment %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+</section>

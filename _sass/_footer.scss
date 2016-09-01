@@ -1,0 +1,68 @@
+.footer {
+
+  margin-top: 0;
+  //padding-bottom: $vertical-padding;
+  background-color: $footer-background;
+  color: $footer-colour;
+  font-size: 16px;
+
+  a.social-icons {
+
+    color: $footer-link-colour;
+
+    &:hover {
+
+      opacity: 0.6;
+
+    }
+
+  }
+
+  .social-icons.btn {
+
+    margin-bottom: 10px;
+
+  }
+
+  a {
+    color: $footer-link-colour;
+  }
+
+}
+
+.icon-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.cw-credit {
+
+  margin-top: 40px;
+
+  font-size: 14px;
+
+  a {
+
+    text-decoration: underline;
+
+  }
+
+}
+
+#sticky-phone-footer {
+
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  background: $footer-background;
+  width: 100%;
+
+  a {
+
+    color: $footer-link-colour;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+}

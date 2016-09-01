@@ -1,0 +1,10 @@
+<div class="header-phone">
+  <div class="hidden-xs">
+    {% for item in site.data.contact %}
+    <a href="#" class="nonclick-phone btn btn-default btn-sm ghost">
+      <i class="fa fa-phone fa-fw fa-rotate-270"></i>
+      <span class="phone-text">Call {{ item.mobile-number }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>

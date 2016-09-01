@@ -1,0 +1,26 @@
+<div class="pull-right header-buttons">
+  <span class="hidden-xs">
+    <span class="nonclick-phone btn btn-default btn-sm ghost">
+      <i class="fa fa-phone fa-fw fa-rotate-270"></i>&nbsp;{{site.data.contact[0].mobile-number}}
+    </span>
+  </span>
+
+  <span class="hidden-sm hidden-md hidden-lg">
+    <a href="tel:{{site.data.contact[0].mobile-number}}" class="click-phone btn btn-default pull-right btn-sm ghost">
+      <span class="phone-text">Click to Call</span>
+      <i class="fa fa-phone fa-fw fa-rotate-270"></i>&nbsp;
+    </a>
+  </span>
+
+  <span class="hidden-xs">
+    <a href="mailto: {{site.data.contact[0].main-email-address-1}}" class="btn btn-default btn-sm ghost">
+      <i class="fa fa-fw fa-envelope"></i>Email Us
+    </a>
+  </span>
+
+  <span class="hidden-sm hidden-md hidden-lg">
+    <a href="mailto: {{site.data.contact[0].main-email-address-1}}" class="btn btn-default pull-right btn-sm ghost">
+      Email Us <i class="fa fa-fw fa-envelope"></i>
+    </a>
+  </span>
+</div>
